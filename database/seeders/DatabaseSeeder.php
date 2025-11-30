@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
 
         $categories = ['Technology', 'Health', 'Lifestyle', 'Business', 'Entertainment'];
            foreach ($categories as $categoryName) {
-            \App\Models\Category::create(['name' => $categoryName]);
+            \App\Models\Category::create(attributes: ['name' => $categoryName]);
 
             }
 
